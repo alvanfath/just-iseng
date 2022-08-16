@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai cantik</title>
+</head>
+<body>
+    <h1>Hai cantik</h1>
+    <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" alt="kamu cantik">
+    <h1>Maukah kamu jadi pacarnya alvan? dia jago ling lho</h1>
+    <button id="btn_mau" onclick="alert('thanks and love you')">Mau</button>
+    <button id="btn_gamau" onclick="embung(this)" style="position:fixed; margin-left: 10px;">gamau</button>
+
+    <script>
+        function embung(id) {
+            let mau = document.getElementById("btn_mau");
+            let i = Math.floor(Math.random() * 300) + 1;
+            let j = Math.floor(Math.random() * 100) + mau.offsetTop;
+            id.style.left = i + "px";
+            id.style.top = j + "px";
+        }
+    </script>
+    
+</body>
+</html>
